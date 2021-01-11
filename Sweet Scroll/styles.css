@@ -1,0 +1,112 @@
+/*
+  ============================
+  General
+  ============================
+*/
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: white;
+}
+
+/* 
+  ============================
+  Text Sections
+  ============================
+*/
+
+.textSection,
+.equipment,
+.ingredients,
+.preparation,
+.instructions,
+.decorations{
+  background-color:#642580;
+  padding:50px 80px;
+}
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: white;
+  text-align:center
+}
+
+/* 
+  ===============================
+  Image Sections
+  ===============================
+*/
+
+.cd-logo, 
+.chocolate-cake,
+.kitchen-equipment,
+.cake-ingredients,
+.cake-preparation,
+.cooking-instructions,
+.cake-decoration {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #642580;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100%;
+}
+.cd-logo {
+  background-image: url("images/CoderDojo.png");
+  min-height: 100%;
+  background-size: auto;
+}
+.chocolate-cake {
+	background-image: url("images/img_parallax.jpg");
+}
+.kitchen-equipment {
+	background-image: url("images/utensils.jpg");
+}
+.cake-ingredients {
+	background-image: url("images/ingredients.jpg")
+}
+.cake-preparation {
+	background-image: url("images/mixer.jpg");
+}
+.cooking-instructions {
+	background-image: url("images/oven.jpg");
+}
+.cake-decoration {
+	background-image: url("images/rosecake.jpg");
+}
+@media only screen and (max-device-width: 1024px) {
+	.cd-logo, 
+    .kitchen-equipment,
+    .cake-ingredients,
+    .cake-preparation,
+    .cooking-instructions,
+    .cake-decoration {
+		background-attachment: scroll;
+	}		
+}
+
+/*
+  ===================================
+  Captions
+  ===================================
+*/
+
+.caption {
+	position:absolute;
+	top: 40%;
+	bottom: 100%;
+	width: 100%;
+	text-align: center;
+}
+.border {
+	background-color: #41BAC1;
+	color: white;
+	padding: 18px;
+	font-size: 25px;
+	letter-spacing: 10px;
+}
+
